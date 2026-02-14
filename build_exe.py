@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ColorOS 桌面布局修补工具 — PyInstaller 打包脚本
+ColorOS 桌面图标分类整理工具 — PyInstaller 打包脚本
 ================================================
 
 用法:
@@ -20,7 +20,7 @@ ColorOS 桌面布局修补工具 — PyInstaller 打包脚本
        python build_exe.py
 
   产出物:
-       dist/ColorOS布局修补工具.exe   (单文件，内含 ADB + Python + requests + openai)
+       dist/ColorOS图标分类整理工具.exe   (单文件，内含 ADB + Python + requests + openai)
 
 注意事项:
   · 打出来的 exe 约 15~25 MB（取决于 Python 版本和 UPX 压缩）
@@ -90,7 +90,7 @@ cmd = [
     "--onefile",
     "--console",          # 控制台程序（需要交互输入）
     "--clean",
-    "--name", "ColorOS布局修补工具",
+    "--name", "ColorOS图标分类整理工具",
 ]
 
 # 添加图标（如果有）
@@ -140,7 +140,7 @@ print()
 r = subprocess.run(cmd, cwd=SCRIPT_DIR)
 
 if r.returncode == 0:
-    dist = os.path.join(SCRIPT_DIR, "dist", "ColorOS布局修补工具.exe")
+    dist = os.path.join(SCRIPT_DIR, "dist", "ColorOS图标分类整理工具.exe")
     if os.path.isfile(dist):
         size_mb = os.path.getsize(dist) / 1024 / 1024
         print()

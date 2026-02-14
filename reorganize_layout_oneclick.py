@@ -390,7 +390,7 @@ def plan_layout(unique_apps, desktop_apps, app_categories, category_order):
 def generate_layout(items, screens, app_categories, category_order):
     """核心函数：生成完整的新布局数据"""
     print("=" * 60)
-    print("  ColorOS 桌面布局一键整理")
+    print("  ColorOS 桌面图标分类整理")
     print("=" * 60)
 
     dock, widgets, cards, old_folders, desktop_apps, in_folder_apps = categorize_items(items)

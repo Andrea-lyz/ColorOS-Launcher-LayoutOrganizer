@@ -1,4 +1,4 @@
-# ColorOS 桌面布局一键修补工具
+# ColorOS 桌面图标分类整理工具
 
 [English](#english) | [中文](#中文)
 
@@ -6,7 +6,7 @@
 
 ### 功能简介
 
-ColorOS 桌面布局一键修补工具是为 OPPO/一加手机用户设计的自动化工具，可以通过 官方手机备份应用 本地备份桌面图标快速整理桌面应用，并按自定义分类自动生成文件夹布局。
+ColorOS 桌面图标分类整理工具是为 OPPO/一加手机用户设计的自动化工具，可以通过 官方手机备份应用 本地备份桌面图标快速整理桌面应用，并按自定义分类自动生成文件夹布局。
 
 **主要功能：**
 - 🔌 **ADB 连接手机** — 自动拉取 PhoneClone 备份到本地
@@ -78,7 +78,7 @@ python reorganize_layout_oneclick.py       # 生成布局
 
 #### 方式三：单文件 EXE（普通用户，仅 Windows）
 
-1. 从 Releases 页面下载 `ColorOS布局修补工具.exe`（ADB、Python 已内置）
+1. 从 Releases 页面下载 `ColorOS图标分类整理工具.exe`（ADB、Python 已内置）
 2. 确保手机已连接 USB，USB 调试已开启
 3. 直接运行 exe，按菜单提示操作
 
@@ -128,7 +128,7 @@ pip install pyinstaller
 # 3. 运行打包脚本
 python build_exe.py
 
-# 4. 输出文件位置: dist/ColorOS布局修补工具.exe
+# 4. 输出文件位置: dist/ColorOS图标分类整理工具.exe
 ```
 
 ### 分类标签说明
@@ -222,7 +222,7 @@ python layout_patch_main.py
 
 #### Method 2: Single EXE File (Windows Users)
 
-1. Download `ColorOS布局修补工具.exe` from Releases
+1. Download `ColorOS图标分类整理工具.exe` from Releases
 2. Ensure USB debugging is enabled on phone
 3. Run the exe and follow menu prompts
 

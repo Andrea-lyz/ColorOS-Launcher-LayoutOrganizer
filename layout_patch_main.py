@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ColorOS 桌面布局一键修补工具 — 全流程主控脚本
+ColorOS 桌面图标分类整理工具 — 全流程主控脚本
 ==============================================
 由 layout_patch.bat 或 PyInstaller 打包的 exe 启动，提供交互式菜单:
 
@@ -860,7 +860,7 @@ def show_menu(serial, phone_root, ts, local_backup):
     """显示主菜单"""
     print()
     print(cyan("╔══════════════════════════════════════════════════════╗"))
-    print(cyan("║") + bold("   ColorOS 桌面布局一键修补工具 — 全流程              ") + cyan("║"))
+    print(cyan("║") + bold("   ColorOS 桌面图标分类整理工具 — 全流程              ") + cyan("║"))
     print(cyan("╠══════════════════════════════════════════════════════╣"))
     print(cyan("║") + f"  设备: {serial:<46s}" + cyan("║"))
     print(cyan("║") + f"  备份: {ts:<46s}" + cyan("║"))
@@ -887,7 +887,7 @@ def show_menu(serial, phone_root, ts, local_backup):
 
 
 def main():
-    print_header("ColorOS 桌面布局一键修补工具")
+    print_header("ColorOS 桌面图标分类整理工具")
 
     # ---- 环境检测 ----
     if not check_environment():

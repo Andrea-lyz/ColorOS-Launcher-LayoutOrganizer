@@ -3,7 +3,7 @@
 ## 对于普通用户（最简单）
 
 ### 1. 下载 EXE
-从 [Releases](https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer/releases) 页面下载最新的 `ColorOS布局修补工具.exe`
+从 [Releases](https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer/releases) 页面下载最新的 `ColorOS图标分类整理工具.exe`
 
 ### 2. 准备手机
 - 用 OPPO 手机自带的**手机搬家**或 **PhoneClone** 应用导出完整备份
@@ -12,7 +12,7 @@
 
 ### 3. 运行工具
 ```
-双击运行 ColorOS布局修补工具.exe
+双击运行 ColorOS图标分类整理工具.exe
 ```
 
 **优势：**
