@@ -6,8 +6,8 @@
 从 [Releases](https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer/releases) 页面下载最新的 `ColorOS图标分类整理工具.exe`
 
 ### 2. 准备手机
-- 用 OPPO 手机自带的**手机搬家**或 **PhoneClone** 应用导出完整备份
-- 将备份复制到电脑的 `Backup/` 目录（或运行 exe 时自动拉取）
+- 用 OPPO 手机自带的**手机搬家**应用导出单独的**桌面布局**完整备份
+- 将备份复制到电脑的 `Backup/` 目录（推荐运行 exe 时自动拉取）
 - 开启 **USB 调试**
 
 ### 3. 运行工具
@@ -35,7 +35,7 @@
 - **6. 推回手机** — 覆盖手机上的备份
 
 ### 5. 在手机上恢复
-打开 **手机搬家 / PhoneClone**，恢复修改后的备份，完成！
+打开 **手机搬家**本地备份恢复，恢复修改后的备份，完成！
 
 ---
 
@@ -100,14 +100,7 @@ python reorganize_layout_oneclick.py --restore
 
 ## 配置 AI 分类（可选）
 
-工具支持兼容 **OpenAI API** 的任何服务。推荐可联网大模型。选择一个即可：
-
-| API 提供商 | Base URL | 推荐度 |
-|-----------|----------|--------|
-| **DeepSeek** | https://api.deepseek.com/v1 | ⭐⭐⭐（免费额度充足） |
-| **OpenAI** | https://api.openai.com/v1 | ChatGPT（需付费） |
-| **通义千问** | https://dashscope.aliyuncs.com/compatible-mode/v1 | 免费试用 |
-| **本地 Ollama** | http://localhost:11434/v1 | 本地离线部署 |
+工具支持兼容 **OpenAI API** 的任何服务。推荐可联网大模型。
 
 ### 快速配置步骤
 
@@ -122,32 +115,11 @@ python reorganize_layout_oneclick.py --restore
 
 ### API 参数示例
 
-**DeepSeek（推荐）**
-```
-Base URL: https://api.deepseek.com/v1
-API Key: sk-[从 dashboard 获取]
-Model: deepseek-chat
-```
-
 **OpenAI**
 ```
 Base URL: https://api.openai.com/v1
 API Key: sk-[从 dashboard 获取]
 Model: gpt-4-turbo
-```
-
-**本地 Ollama（离线）**
-```
-Base URL: http://localhost:11434/v1
-API Key: ollama
-Model: llama2
-```
-
-**通义千问**
-```
-Base URL: https://dashscope.aliyuncs.com/compatible-mode/v1
-API Key: sk-[从 dashboard 获取]
-Model: qwen-turbo
 ```
 
 ### 修改 AI 分类提示词
@@ -229,7 +201,7 @@ A：只有 PhoneClone 备份才包含完整的启动器数据库和布局信息�
 A：可以。工具会自动创建 `.bak` 备份文件，选择菜单 **R** 随时恢复。
 
 **Q：支持所有 OPPO 手机吗？**  
-A：支持使用 ColorOS 6.0+ 的 OPPO、OnePlus、Realme 手机。其他品牌的 Android 手机可能数据库结构不同，不保证兼容。
+A：在运行ColorOS 16.0 的 OnePlus 13上通过测试，不保证机型间通用。
 
 **Q：隐私安全吗？**  
 A：本工具完全离线，不会上传任何数据到云端。所有操作都在本地计算机进行。唯一的网络请求是：

@@ -9,12 +9,12 @@
 ColorOS 桌面图标分类整理工具是为 OPPO/一加手机用户设计的自动化工具，可以通过 官方手机备份应用 本地备份桌面图标快速整理桌面应用，并按自定义分类自动生成文件夹布局。
 
 **主要功能：**
-- 🔌 **ADB 连接手机** — 自动拉取 PhoneClone 备份到本地
+- 🔌 **ADB 连接手机** — 自动拉取备份文件到PC本地
 - 📊 **智能应用分类** — 三层分类引擎：
   - Google Play 云端查询（国际应用）
   - 腾讯应用宝查询（中国应用）
   - AI 智能分类（OpenAI 兼容 API）
-- ⚙️ **自动布局生成** — 根据分类修改 SQLite 数据库 + XML + tar 打包
+- ⚙️ **自动整理生成** — 根据分类修改 SQLite 数据库 + XML + tar 打包
 - 🔄 **推回手机** — 完整替换手机上的备份，恢复即可应用
 - 💾 **增量保存** — 支持中途中断，下次继续
 
@@ -23,7 +23,7 @@ ColorOS 桌面图标分类整理工具是为 OPPO/一加手机用户设计的自
 - Python 3.8+
 - Windows / macOS / Linux
 - ADB（安卓调试桥）
-- Android 手机 + PhoneClone 应用
+- Android 手机 + 官方手机搬家 应用(ColorOS/Oxygen版本通杀)
 
 ### 安装与使用
 
@@ -42,8 +42,8 @@ ColorOS-Layout-Patcher/
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/Andrea-lyz/ColorOS-Layout-Patcher.git
-cd ColorOS-Layout-Patcher
+git clone https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer.git
+cd ColorOS-Launcher-LayoutOrganizer
 
 # 2. 安装依赖（仅需一次）
 pip install -r requirements.txt
@@ -78,9 +78,16 @@ python reorganize_layout_oneclick.py       # 生成布局
 
 #### 方式三：单文件 EXE（普通用户，仅 Windows）
 
+**前置准备（手机上操作）：**
+- 用 OPPO 手机自带的**手机搬家**应用导出单独的**桌面布局**完整备份
+- 将备份复制到电脑的 `Backup/` 目录（推荐运行 exe 时自动拉取）
+- 开启 **USB 调试**
+
+**使用步骤：**
 1. 从 Releases 页面下载 `ColorOS图标分类整理工具.exe`（ADB、Python 已内置）
 2. 确保手机已连接 USB，USB 调试已开启
-3. 直接运行 exe，按菜单提示操作
+3. 直接运行 exe，按菜单提示操作（1 → 2 → 3/3A → 4 → 5 → 6）
+4. 完成后，打开手机搬家，本地备份恢复修改后的备份
 
 **EXE 优势：**
 - ✅ 无需安装 Python、ADB、依赖库
@@ -163,7 +170,7 @@ python build_exe.py
 A：需要安装 Android SDK Platform-Tools，或将 adb 添加到 PATH。
 
 **Q：云端分类很慢**  
-A：受网络限制，Google Play 和应用宝查询需要联网。可以用 AI 分类加速（但需配置 API）。
+A：受网络限制，Google Play 和应用宝查询需要联网。可以用 AI 分类加速（推荐！但需配置 API）。
 
 **Q：中途按了键，是否会丢失已查询的结果？**  
 A：不会。所有长时间操作都支持中断保存，下次运行会继续。
@@ -198,7 +205,7 @@ ColorOS Layout Patcher is an automated tool for OPPO/OnePlus users to quickly or
   - Google Play Cloud Lookup (International Apps)
   - Tencent AppBao Lookup (Chinese Apps)
   - AI Classification (OpenAI-compatible API)
-- ⚙️ **Auto Layout Generation** — Modify SQLite DB + XML + tar
+- ⚙️ **Auto Icon Organization** — Modify SQLite DB + XML + tar based on classification
 - 🔄 **Push Back to Phone** — Full replacement, restore and apply
 - 💾 **Incremental Save** — Interrupt-safe, resume support
 
@@ -207,7 +214,7 @@ ColorOS Layout Patcher is an automated tool for OPPO/OnePlus users to quickly or
 - Python 3.8+
 - Windows / macOS / Linux
 - ADB (Android Debug Bridge)
-- Android Phone + PhoneClone App
+- Android Phone + Official Phone Clone App (supports ColorOS/Oxygen)
 
 ### Installation & Usage
 
@@ -222,7 +229,16 @@ python layout_patch_main.py
 
 #### Method 2: Single EXE File (Windows Users)
 
-1. Download `ColorOS图标分类整理工具.exe` from Releases
+**Phone Preparation (on your phone):**
+- Use OPPO's built-in **Phone Clone** app to export a complete **Desktop Layout** backup
+- Copy backup to your computer's `Backup/` directory (recommended: auto-fetch during exe run)
+- Enable **USB Debugging**
+
+**Usage Steps:**
+1. Download `ColorOS图标分类整理工具.exe` from Releases (ADB + Python included)
+2. Connect phone via USB with debugging enabled
+3. Run exe and follow menu prompts (1 → 2 → 3/3A → 4 → 5 → 6)
+4. After completion, open Phone Clone and restore the modified backup locally
 2. Ensure USB debugging is enabled on phone
 3. Run the exe and follow menu prompts
 
