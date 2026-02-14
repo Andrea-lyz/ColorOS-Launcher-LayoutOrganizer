@@ -180,6 +180,9 @@ A：不会。所有长时间操作都支持中断保存，下次运行会继续�
 **Q：修改后的布局不生效**  
 A：确保已完成步骤 6（推回手机），然后在手机端用 本地备份 恢复备份。
 
+**Q：为什么导入后某些应用分类并未创建？**  
+A：因为该应用分类只有一个应用，桌面启动器默认1个应用无法创建文件夹
+
 ### 开发与贡献
 
 欢迎提交 Issue 和 Pull Request！主要代码模块：
@@ -243,6 +246,11 @@ python layout_patch_main.py
 2. Connect phone via USB with debugging enabled
 3. Run exe and follow menu prompts (1 → 2 → 3/3A → 4 → 5 → 6)
 4. After completion, open Phone Clone and restore the modified backup locally
+
+### Frequently Asked Questions
+
+**Q: Why are some app categories not created after import?**  
+A: Because that app category has only one app, and the desktop launcher cannot create folders with just one app by default.
 
 ### License
 
