@@ -3,7 +3,7 @@
 ## 对于普通用户（最简单）
 
 ### 1. 下载 EXE
-从 [Releases](https://github.com/Andrea-lyz/ColorOS-Layout-Patcher/releases) 页面下载最新的 `ColorOS布局修补工具.exe`
+从 [Releases](https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer/releases) 页面下载最新的 `ColorOS布局修补工具.exe`
 
 ### 2. 准备手机
 - 用 OPPO 手机自带的**手机搬家**或 **PhoneClone** 应用导出完整备份
@@ -43,8 +43,8 @@
 
 ### 1. 克隆仓库
 ```bash
-git clone https://github.com/Andrea-lyz/ColorOS-Layout-Patcher.git
-cd ColorOS-Layout-Patcher
+git clone https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer.git
+cd ColorOS-Launcher-LayoutOrganizer
 ```
 
 ### 2. 安装依赖（仅需一次）
@@ -193,7 +193,7 @@ Model: qwen-turbo
 setx PATH "%PATH%;C:\path\to\platform-tools"
 
 # 方案 2：直接复制到项目 platform-tools/ 文件夹中
-# ColorOS-Layout-Patcher/
+# ColorOS-Launcher-LayoutOrganizer/
 # ├── platform-tools/
 # │   └── adb.exe
 # └── layout_patch.bat
@@ -240,7 +240,7 @@ A：本工具完全离线，不会上传任何数据到云端。所有操作都�
 
 ## 报告问题
 
-发现 Bug 或有改进建议？请提交 [Issue](https://github.com/Andrea-lyz/ColorOS-Layout-Patcher/issues)
+发现 Bug 或有改进建议？请提交 [Issue](https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer/issues)
 
 提供以下信息会更有帮助：
 - 手机型号和 ColorOS 版本

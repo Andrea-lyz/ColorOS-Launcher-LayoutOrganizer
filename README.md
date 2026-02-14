@@ -59,8 +59,8 @@ pip install -r requirements.txt
 
 ```bash
 # 克隆仓库
-git clone https://github.com/Andrea-lyz/ColorOS-Layout-Patcher.git
-cd ColorOS-Layout-Patcher
+git clone https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer.git
+cd ColorOS-Launcher-LayoutOrganizer
 
 # 安装依赖
 pip install -r requirements.txt
@@ -214,8 +214,8 @@ ColorOS Layout Patcher is an automated tool for OPPO/OnePlus users to quickly or
 #### Method 1: Python Script (Developers)
 
 ```bash
-git clone https://github.com/Andrea-lyz/ColorOS-Layout-Patcher.git
-cd ColorOS-Layout-Patcher
+git clone https://github.com/Andrea-lyz/ColorOS-Launcher-LayoutOrganizer.git
+cd ColorOS-Launcher-LayoutOrganizer
 pip install requests openai
 python layout_patch_main.py
 ```
